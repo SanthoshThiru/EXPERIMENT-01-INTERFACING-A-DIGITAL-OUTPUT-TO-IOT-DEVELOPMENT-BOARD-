@@ -1,15 +1,17 @@
-###  DATE: 
+###  DATE: 19-08-2024 
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: SANTHOSH T
+###  ROLL NO : 212223220100
+###  DEPARTMENT: INFORMATION TECHNOLOGY
 
 
 
 # EXPERIMENT-01-INTERFACING-A-DIGITAL-OUTPUT-TO-IOT-DEVELOPMENT-BOARD
 
-## Aim: To Interface a Digital output (LED) to ARM IOT development board and write a  program to blink an led 
-## Components required: STM32 CUBE IDE, ARM IOT development board,  STM programmer tool.
+## Aim: 
+To Interface a Digital output (LED) to ARM IOT development board and write a  program to blink an led 
+## Components required: 
+STM32 CUBE IDE, ARM IOT development board,  STM programmer tool.
 ## Theory 
 The full form of an ARM is an advanced reduced instruction set computer (RISC) machine, and it is a 32-bit processor architecture expanded by ARM holdings. The applications of an ARM processor include several microcontrollers as well as processors. The architecture of an ARM processor was licensed by many corporations for designing ARM processor-based SoC products and CPUs. This allows the corporations to manufacture their products using ARM architecture. Likewise, all main semiconductor companies will make ARM-based SOCs such as Samsung, Atmel, TI etc.
 
@@ -51,6 +53,7 @@ The main features of LPC2148 include the following.
 ![image](https://user-images.githubusercontent.com/36288975/226189280-ed5dcf1d-dd8d-43ae-815d-491085f4863b.png)
 
 4.select the program name 
+
 ![image](https://user-images.githubusercontent.com/36288975/226189316-09832a30-4d1a-4d4f-b8ad-2dc28f137711.png)
 
 
@@ -87,13 +90,24 @@ The main features of LPC2148 include the following.
 
 ## STM 32 CUBE PROGRAM :
 
+while (1)
+  {
+  
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+	  HAL_Delay(1000);
+
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+	  HAL_Delay(1000);
+   
+   }
 
 
 
 
 ## OUTPUT  :
  
- 
+ ![image](https://github.com/user-attachments/assets/a1456a71-ab05-4a26-a37a-8f578e0a3385)
+
  
  
 ## Result :
